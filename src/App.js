@@ -1,14 +1,20 @@
 import React from 'react';
 import './App.css';
 import Sidebar from './Sidebar';
+import Feed from './Feed';
 
 
 function App() {
   return (
     <div className="app">
-      <h1> Hey Faiyaj</h1>
+      {/* Sidebar */}
+      <Sidebar/>
 
-    <Sidebar/>
+      {/* Feed */}
+      <Feed/>
+
+      {/* Widgets */}
+      
 
 
     </div>
@@ -16,3 +22,4 @@ function App() {
 }
 
 export default App;
+
