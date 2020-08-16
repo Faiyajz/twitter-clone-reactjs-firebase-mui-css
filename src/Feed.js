@@ -15,8 +15,8 @@ function Feed() {
             <TweetBox/>
 
             {/* Post */}
+            <Post displayName="Md. Faiyaj Zaman" username="faiyajz007" verified ={true} text="It's working!" avatar="https://mworldvision.com/uploads/testimonial/1581067121_mavtar.jpg" image="https://media.giphy.com/media/5Uz5vRLUMSwWJnGh0a/giphy.gif"/>
             <Post/>
-               
         </div>
     );
 }

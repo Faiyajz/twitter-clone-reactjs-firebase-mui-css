@@ -7,31 +7,28 @@ import RepeatIcon from '@material-ui/icons/Repeat';
 import PublishIcon from '@material-ui/icons/Publish';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 
-function Post({
-    displayName,
-    username,
-    verified,
-    text,
-    image,
-    avatar
-}) {
+function Post({displayName,username,verified,text,image,avatar})
+{
     return (
         <div className="post">
             <div className="post__avatar">
-                <Avatar src="https://mworldvision.com/uploads/testimonial/1581067121_mavtar.jpg"/>
+                <Avatar src={avatar}/>
             </div>
             <div className="post__body">
                 <div className="post__header">
                     <div className="post__headerText">
-                        <h3>
-                            Faiyaj Zaman {" "} <span className="post__headerSpecial"> <VerifiedUserIcon className="post__badge"/></span>
+                        <h3>{displayName} {" "}
+                        <span className="post__headerSpecial">
+                            {verified && <VerifiedUserIcon className="post__badge"/>}
+                            @{username}
+                        </span>
                         </h3>
                     </div>
                 </div>
                 <div className="post__headerDescription">
-                    <p> Here goes the header description </p>
+                    <p> {text} </p>
                 </div>
-                <img src="https://media.giphy.com/media/huyZxIJvtqVeRp7QcS/giphy.gif" alt=""/>
+                <img src={image} alt=""/>
 
                 <div className="post__footer">
                     <ChatBubbleOutlineIcon fontSize="small"/>
