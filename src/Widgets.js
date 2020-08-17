@@ -4,7 +4,7 @@ import {
     TwitterTimelineEmbed,
     TwitterShareButton,
     TwitterTweetEmbed
-} from "react-twitter-embed";
+} from 'react-twitter-embed';
 
 import "./Widgets.css";
 
